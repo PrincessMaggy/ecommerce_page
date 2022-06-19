@@ -1,0 +1,56 @@
+.Nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em 1.5em 0 1.5em;
+    margin: 0 3em 0 3em;
+    border-bottom: hsl(223, 64%, 98%) 1px groove;
+}
+
+.left {
+    padding-left: 1em;
+    display: flex;
+    justify-content: space-between;
+    a {
+        padding: 0 2em 2em 2em;
+        text-decoration: none;
+        position: relative;
+        color: hsl(219, 9%, 45%);
+        &:hover {
+            font-weight: 500;
+            color: hsl(220, 13%, 13%);
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 3px;
+            bottom: 0;
+            left: 0;
+            background-color: hsl(26, 100%, 55%);
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+        &:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+    }
+}
+
+.right {
+    display: flex;
+}
+
+svg:hover path {
+    fill: hsl(220, 13%, 13%);
+}
+
+.avatar {
+    max-width: 30%;
+    &:hover {
+        border: 3px groove hsl(26, 100%, 55%);
+        border-radius: 50%;
+        transition: 0.1s ease;
+    }
+}
