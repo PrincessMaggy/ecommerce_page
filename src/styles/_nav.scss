@@ -6,6 +6,10 @@
     border-bottom: hsl(223, 64%, 98%) 1px groove;
 }
 
+.menu {
+    display: none;
+}
+
 .left {
     padding-left: 1em;
     display: flex;
@@ -60,11 +64,15 @@ svg:hover path {
         text-align: left;
         margin: 0;
         padding: 1em;
-        .menu {
+        border: none;
+        height: 100%;
+        // position: absolute;
+        .first {
             display: flex;
-            & div {
-                padding-right: 1em;
-            }
+        }
+        .menu {
+            display: block;
+            margin: 0 2em 2em 0;
         }
         .left {
             display: block;
@@ -75,6 +83,15 @@ svg:hover path {
                 padding-left: 0;
             }
         }
+    }
+    .links {
+        display: none;
+    }
+    .showMenu {
+        display: block;
+    }
+    .hide {
+        display: none;
     }
     .right div {
         padding-left: 2em;
