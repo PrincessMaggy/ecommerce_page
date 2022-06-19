@@ -11,13 +11,27 @@ const Nav = () => {
 return(
     <div className="Nav">
         <div className="left">
-            <div>
-            <img src={logo} alt="logo" /></div>
-            <a href="#" >Collections</a>
-            <a href="#" > Men </a>
-            <a href="#" > Women </a>
-            <a href="#" > About </a>
-            <a href="#" > Contact </a>
+            <div className="menu">
+                <div>
+                    <img src={menu} alt="menu" />
+                </div>
+
+                <div>
+                    <img src={close} alt="menu" />
+                </div> 
+
+                <div>
+                    <img src={logo} alt="logo" />
+                </div>
+             </div>
+           
+           <div className="links"> 
+                <a href="#" >Collections</a>
+                <a href="#" > Men </a>
+                <a href="#" > Women </a>
+                <a href="#" > About </a>
+                <a href="#" > Contact </a>
+            </div>
         </div>
 
         <div className="right">

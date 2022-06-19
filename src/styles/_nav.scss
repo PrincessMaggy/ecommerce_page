@@ -54,3 +54,29 @@ svg:hover path {
         transition: 0.1s ease;
     }
 }
+
+@media screen and(max-width:768px) {
+    .Nav {
+        text-align: left;
+        margin: 0;
+        padding: 1em;
+        .menu {
+            display: flex;
+            & div {
+                padding-right: 1em;
+            }
+        }
+        .left {
+            display: block;
+            a {
+                display: block;
+                color: hsl(220, 13%, 13%);
+                font-weight: 700;
+                padding-left: 0;
+            }
+        }
+    }
+    .right div {
+        padding-left: 2em;
+    }
+}
