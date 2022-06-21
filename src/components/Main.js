@@ -1,28 +1,33 @@
-import React from "react";
+import React,{useState} from "react";
 //importing assets
 // import cart from '../images/icon-cart.svg';
 import plus from '../images/icon-plus.svg';
 import minus from '../images/icon-minus.svg';
-import thumb1 from '../images/image-product-1-thumbnail.jpg';
-import thumb2 from '../images/image-product-2-thumbnail.jpg';
-import thumb3 from '../images/image-product-3-thumbnail.jpg';
-import thumb4 from '../images/image-product-4-thumbnail.jpg';
 import product1 from '../images/image-product-1.jpg';
+import product2 from '../images/image-product-2.jpg';
+import product3 from '../images/image-product-3.jpg';
+import product4 from '../images/image-product-4.jpg';
 
 const Main = () =>{
+
+    const [src, setSrc] = useState(product1);
+
+    const setGallery = (e) =>{
+        setSrc(e.target.src);
+    }
 
 return(
     <div className="main">
         <div className="one">
             <div className="product">
-                <img src={product1} alt="thumb" />
+                <img src={src} alt="thumb" />
             </div>
 
             <div className="thumbnails">
-                <img src={thumb1} alt="thumb1" />
-                <img src={thumb2} alt="thumb2" />
-                <img src={thumb3} alt="thumb3" />
-                <img src={thumb4} alt="thumb4" />
+                <img src={product1} alt="thumb1" onClick={setGallery} />
+                <img src={product2} alt="thumb2" onClick={setGallery} />
+                <img src={product3} alt="thumb3" onClick={setGallery}/>
+                <img src={product4} alt="thumb4" onClick={setGallery} />
             </div>
         
         </div>
