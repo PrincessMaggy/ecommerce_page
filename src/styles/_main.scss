@@ -52,7 +52,7 @@
         h6 {
             color: hsl(26, 100%, 55%);
             background-color: hsl(25, 100%, 94%);
-            padding: 0.1em 1em 0 1em;
+            padding: 0.5em;
             font-weight: 700;
             font-size: 1.1rem;
             margin: 0;
@@ -73,6 +73,7 @@
     .alter {
         padding: 1em;
         background-color: hsl(223, 64%, 98%);
+        display: flex;
         margin-right: 2em;
         width: 50%;
         border-radius: 10px;
@@ -94,6 +95,47 @@
             border: none;
             background-color: hsl(26, 100%, 55%);
             color: white;
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .main {
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+    }
+    .one {
+        width: 100%;
+        .product img {
+            max-width: 100%;
+        }
+    }
+    .thumbnails {
+        display: none;
+    }
+    .two {
+        padding: 2em;
+        .price {
+            display: inline-flex;
+            margin-right: 2em;
+        }
+        h5 {
+            display: inline;
+        }
+    }
+    .btns {
+        display: block;
+        .alter {
+            width: 92%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1em;
+        }
+        .alter2 {
+            button {
+                width: 100%;
+            }
         }
     }
 }

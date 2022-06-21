@@ -63,7 +63,6 @@ svg:hover path {
     .Nav {
         text-align: left;
         margin: 0;
-        padding: 1em;
         border: none;
         // height: 100%;
         // position: fixed;
@@ -103,5 +102,14 @@ svg:hover path {
     }
     .right div {
         padding-left: 2em;
+    }
+}
+
+@media only screen and (min-width:769px) and(max-width:1000px) {
+    .Nav {
+        margin: 0;
+        a {
+            padding: 0 1em 1.1em 1em;
+        }
     }
 }

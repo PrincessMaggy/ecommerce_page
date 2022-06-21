@@ -23,7 +23,6 @@ return(
                 <img src={thumb2} alt="thumb2" />
                 <img src={thumb3} alt="thumb3" />
                 <img src={thumb4} alt="thumb4" />
-
             </div>
         
         </div>
@@ -45,9 +44,9 @@ return(
 
             <div className="btns">
                 <div className="alter">
-                    <img src={minus} alt="minus" />
+                    <div><img src={minus} alt="minus" /></div>
                     <span>0</span>
-                    <img src={plus} alt="plus" />
+                    <div><img src={plus} alt="plus" /></div>
                 </div>
 
                 <div className="alter2">
